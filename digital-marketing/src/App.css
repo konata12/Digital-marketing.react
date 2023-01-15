@@ -14,6 +14,7 @@
     max-width: 1200px;
 }
 
+/* BTN */
 .btn_blue {
     display: flex;
     height: 52px;
@@ -59,4 +60,23 @@
 .btn_yellow:hover {
     background-color: #ff8c00;
 }
+/* BTN/ */
+
+/* TEXT */
+.title {
+    font-family: 'osw';
+    font-size: 56px;
+    line-height: 66px;
+    text-transform: uppercase;
+
+}
+.text_fill {
+    font-family: 'rob';
+    font-size: 16px;
+    line-height: 26px;
+}
+.blue_text {
+
+}
+/* TEXT/ */
 /* COMMON/ */
