@@ -1,0 +1,16 @@
+.link {
+    font-family: 'osw';
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+
+    display: inline-block;
+    margin-right: 40px;
+}
+.link:last-child {
+    margin-right: 0;
+}
+
+.link a {
+    color: #000;
+}
