@@ -6,7 +6,7 @@ class TextFill extends React.Component {
     }
     render() { 
         return (
-            <p className='text_fill'>
+            <p className={`text_fill ` + this.props.class}>
                 {this.props.text}
             </p>
         );

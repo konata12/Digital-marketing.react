@@ -6,11 +6,11 @@ class Employee extends React.Component {
     }
     render() { 
         return (
-            <div className='employee'>
+            <div className={`employee ` + this.props.class}>
                 <img src={this.props.employee} alt={this.props.employeeName} />
-                <div>
+                <div className='employee_info'>
                     <p>{this.props.employeeName}</p>
-                    <div>
+                    <div className='stars'>
                         <img src={this.props.star} alt={this.props.starAlt} />
                         <img src={this.props.star} alt={this.props.starAlt} />
                         <img src={this.props.star} alt={this.props.starAlt} />

@@ -1,0 +1,39 @@
+.section_2.container {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blue_text.section_2 {
+    margin-bottom: 4px;
+}
+.title.section_2 {
+    font-size: 40px;
+    line-height: 48px;
+
+    max-width: 390px;
+    margin-bottom: 39px;
+}
+.text_fill.section_2 {
+    max-width: 655px;
+    margin-bottom: 77px;
+}
+
+/* IMG */
+
+.section_2_img {
+    position: relative;
+}
+.section_2_girl {
+    width: 100%;
+}
+.section_2_grey {
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+.section_2_orange {
+    position: absolute;
+}

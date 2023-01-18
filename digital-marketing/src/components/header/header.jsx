@@ -22,9 +22,10 @@ class Header extends React.Component {
     }
 
     render() {
+        const cls = 'header'
         return (
-            <header className="header">
-                <Container>
+            <header className={cls}>
+                <Container class={cls}>
                     <HeaderLogo
                         sourse={logo}
                         altName='logo'

@@ -4,7 +4,7 @@ class Container extends React.Component {
 
     render() {
         return (
-            <div className='container'>
+            <div className={`container ` + this.props.class}>
                 {this.props.children}
             </div>
         );

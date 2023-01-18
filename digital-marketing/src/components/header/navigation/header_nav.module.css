@@ -1,7 +1,9 @@
 .nav {
     display: flex;
+    align-items: center;
     flex-grow: 1;
-    padding: 25px 0 29px 60px;
+    padding-left: 60px;
+    padding-right: 23px;
 
     list-style-type: none;
 }

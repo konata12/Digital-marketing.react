@@ -1,3 +1,4 @@
 .logo {
-    padding: 23px 0 25px;
+    display: flex;
+    align-items: center;
 }

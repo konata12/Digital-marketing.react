@@ -15,7 +15,7 @@ class Btn extends React.Component {
         const color = this.props.color;
 
         return (
-            <button onClick={this.openPurchasePage} className={color ? ('btn_' + color) : ''}>
+            <button onClick={this.openPurchasePage} className={'btn ' + color}>
                 {name}
             </button>
         );
