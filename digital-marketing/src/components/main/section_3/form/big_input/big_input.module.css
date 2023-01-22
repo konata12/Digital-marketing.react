@@ -1,0 +1,20 @@
+.input {
+    display: inline-block;
+    width: 100%;
+    border: none;
+    background: #F8F8F8;
+    border: 1px solid #E7E7E7;
+    border-radius: 6px;
+    padding: 5% 5.653%;
+    margin-bottom: 32px;
+
+    font-family: 'rob';
+    font-size: 15px;
+}
+.input:focus {
+    outline: none;
+}
+.input::placeholder {
+    font-family: 'arial';
+    font-size: 15px;
+}

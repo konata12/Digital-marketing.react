@@ -13,13 +13,15 @@
     margin: auto;
     max-width: 1200px;
 }
+.df {
+    display: flex;
+}
 
 /* BTN */
 .btn {
     display: flex;
     align-items: center;
     padding: 14px 40px;
-    background-color: #0057FF;
     border: none;
     border-radius: 30px;
     margin: 13px 0 15px;

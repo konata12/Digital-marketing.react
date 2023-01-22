@@ -1,0 +1,28 @@
+.title {
+    font-size: 29px;
+    line-height: 40px;
+    text-align: center;
+
+    margin-bottom: 26px;
+}
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+
+    margin-bottom: 17px;
+}
+.inputBox {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 32px;
+}
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    font-family: 'rob';
+    font-size: 15px;
+}
