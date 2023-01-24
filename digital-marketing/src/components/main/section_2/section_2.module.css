@@ -1,8 +1,7 @@
-.section_2 {
+.section2 {
     overflow: hidden;
 }
-
-.section_2.container {
+.container {
     text-align: center;
 
     display: flex;
@@ -11,37 +10,37 @@
     overflow: visible;
 }
 
-.blue_text.section_2 {
+.blueText {
     margin-bottom: 4px;
 }
-.title.section_2 {
+.title {
     font-size: 40px;
     line-height: 48px;
 
     max-width: 390px;
     margin-bottom: 39px;
 }
-.text_fill.section_2 {
+.textFill {
     max-width: 655px;
     margin-bottom: 77px;
 }
 
 /* IMG */
 
-.section_2_img {
+.imgBox {
     position: relative;
 }
-.section_2_girl {
+.girl {
     width: 100%;
 }
-.section_2_grey {
+.grey {
     position: absolute;
     top: 40px;
     left: 0;
     width: 8.33%;
     height: calc((100px / 1200) * 100%);
 }
-.section_2_orange {
+.orange {
     position: absolute;
     /* bottom: -30%; */
     bottom: 0;

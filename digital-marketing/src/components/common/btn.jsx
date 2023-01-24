@@ -7,7 +7,9 @@ class Btn extends React.Component {
     }
 
     openPurchasePage(e) {
-        this.props.handlerFunc(e)
+        if (this.props.handlerFunc) {
+            this.props.handlerFunc(e)
+        }
     }
 
     render() {

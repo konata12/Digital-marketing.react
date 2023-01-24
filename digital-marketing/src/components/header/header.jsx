@@ -1,5 +1,5 @@
 import React from 'react';
-import './header.css'
+import styles from './header.module.css'
 
 // Components
 import Container from '../common/container';
@@ -23,9 +23,10 @@ class Header extends React.Component {
 
     render() {
         const cls = 'header'
+
         return (
             <header className={cls}>
-                <Container class={cls}>
+                <Container class={styles.container}>
                     <HeaderLogo
                         sourse={logo}
                         altName='logo'

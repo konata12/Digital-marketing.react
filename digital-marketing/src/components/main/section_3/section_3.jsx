@@ -1,9 +1,10 @@
 import React from 'react';
-import './section_3.css'
+import styles from './section_3.module.css';
 
 // Components
 import Container from '../../common/container';
 import Left from '../../main/section_3/left/left';
+import Right from '../../main/section_3/right/right';
 import Form from '../../main/section_3/form/form';
 import Title from '../../common/title';
 
@@ -13,48 +14,33 @@ import form from '../../img/form_people.jpg';
 class Section3 extends React.Component {
     constructor(props) {
         super(props);
-        this.getFormData = this.getFormData.bind(this)
+        this.getData = this.getData.bind(this)
         this.state = {
-            form: ''
+            data: ''
         }
     }
 
-    getFormData(value) {
+    getData(value) {
         this.setState({
-            form: value
+            data: value
         })
-        alert(this.state.form)
-        console.dir(this.state.form)
     }
     
     render() {
-        const cls = ' section_3'
+        console.dir(this.state.data)
 
         return (
-            <section className={cls}>
+            <section className={styles.section3}>
                 <Title
-                    class={cls}
+                    class={styles.title}
                     reg={2}
                     text='more about us'
                 />
-                <Container class={cls}>
-                    <Left
-                        class={cls}
+                <Container class={styles.container}>
+                    <Left />
+                    <Right
+                        getData={this.getData}
                     />
-                    <div className={'right' + cls}>
-                        <div className={'form_box' + cls}>
-                            <div className={'form_img' + cls}>
-                                <img src={form} alt="people working" />
-                            </div>
-
-                            <div className={'form' + cls}>
-                                <Form
-                                    class={cls}
-                                    getData={this.getFormData}
-                                />
-                            </div>
-                        </div>
-                    </div>
                 </Container>
             </section>
         );

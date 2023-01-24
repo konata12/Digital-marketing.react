@@ -39,10 +39,12 @@ class Form extends React.Component {
     }
 
     render() { 
-        const cls = this.props.class
+        const cls = this.props.class ? this.props.class : ''
 
         return (
-            <form className={styles.form} >
+            <form className={styles.form + ' ' + cls}
+                onSubmit={this.btnAction}
+            >
                 <Title
                     class={styles.title}
                     reg={3}
@@ -86,7 +88,7 @@ class Form extends React.Component {
                     type='submit'
                     name='SENT MESSAGE'
                     class={styles.btn}
-                    handlerFunc={this.btnAction}
+                    // handlerFunc={this.btnAction}
                 />
             </form>
         );

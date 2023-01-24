@@ -1,0 +1,27 @@
+.right {
+    width: 50%;
+    padding-left: 5%;
+    padding-top: 16.5%;
+}
+
+/* Form */
+.formBox {
+    width: 100%;
+    box-shadow: 0px 8px 28px rgba(83, 83, 83, 0.15);
+    border-radius: 15px;
+}
+.formImgBox {
+    width: 100%;
+}
+.img {
+    width: 100%;
+    display: block;
+}
+.formTextBox {
+    width: 100%;
+    padding: 10% 7.41% 10%;
+}
+.form {
+    
+}
+/* Form/ */

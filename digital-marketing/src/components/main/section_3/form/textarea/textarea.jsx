@@ -16,7 +16,7 @@ class TextArea extends React.Component {
         const cls = this.props.class ? this.props.class : ''
 
         return (
-            <textarea className={styles.text + cls}
+            <textarea className={styles.text + ' ' + cls}
                 placeholder={this.props.placeholder}
                 onChange={this.changeHandler}
                 name={this.props.name}

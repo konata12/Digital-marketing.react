@@ -1,5 +1,5 @@
 import React from 'react';
-import './section_2.css'
+import styles from './section_2.module.css';
 
 // Components
 import Container from '../../common/container';
@@ -16,42 +16,42 @@ class Section2 extends React.Component {
     constructor(props) {
         super(props);
     }
+
     render() {
-        const cls = 'section_2'
 
         return (
-            <section className={cls}>
-                <Container class={cls} >
+            <section className={styles.section2}>
+                <Container class={styles.container} >
                     <BlueText
-                        class={cls}
+                        class={styles.blueText}
                         text='Event Technology'
                     />
                     <Title
-                        class={cls}
+                        class={styles.title}
                         reg={2}
                         text='The solution that
                         your business can rely on'
                     />
                     <TextFill
-                        class={cls}
+                        class={styles.textFill}
                         text='Your work is going to fill a large part
                         of your life, and the only way to be truly
                         satisfied is to do what you believe is great work.
                         And the only way to do great work is to love what you do.'
                     />
-                    <div className={cls + '_img'}>
+                    <div className={styles.imgBox}>
                         <img
-                            className={cls + '_girl'}
+                            className={styles.girl}
                             src={main}
                             alt="girl"
                         />
                         <img
-                            className={cls + '_grey'}
+                            className={styles.grey}
                             src={grey}
                             alt="triangle"
                         />
                         <img
-                            className={cls + '_orange'}
+                            className={styles.orange}
                             src={orange}
                             alt="triangle"
                         />

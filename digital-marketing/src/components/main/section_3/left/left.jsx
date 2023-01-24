@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './left.module.css';
 
 // Components
 import Title from '../../../common/title';
@@ -24,24 +25,23 @@ class Left extends React.Component {
     }
 
     render() {
-        const cls = this.props.class
-        const left = ' left'
+        const cls = this.props.class ? this.props.class : ''
 
         return (
-            <div className={left}>
+            <div className={styles.left + ' ' + cls}>
                 <Title
-                    class={cls}
+                    class={styles.title}
                     reg={2}
                     text='Experience design and
                     intelligent marketing for
                     growing brands'
                 />
                 <TextFill
-                    class={cls}
+                    class={styles.textFill}
                     text='The first rule of any technology used in a business is that automation
                     applied to an efficient operation will magnify the efficiency.'
                 />
-                <div className={'df ' + cls}>
+                <div className={'df ' + styles.df}>
                     <EfficientyProfit
                         img={customerSupport}
                         alt='Customer support'
@@ -58,7 +58,7 @@ class Left extends React.Component {
                     />
                 </div>
                 <Btn
-                    class={cls}
+                    class={styles.btn}
                     color={'blue'}
                     name={'Read more'}
                     handlerFunc={this.action}

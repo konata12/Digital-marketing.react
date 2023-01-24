@@ -1,23 +1,23 @@
-.section_1 {
+.section1 {
     overflow: hidden;
 }
 
-.container.section_1 {
+.container {
     display: flex;
     overflow: visible;
 }
 
 /* LEFT */
-.section_1_left {
+.left {
     z-index: 1;
     width: 40%;
     padding-top: 14.25%;
     padding-bottom: 16.16%;
 }
-.title.section_1 {
+.title {
     margin-bottom: 52px;
 }
-.text_fill.section_1 {
+.textFill {
     margin-bottom: 17px;
 }
 .employee.section_1 {
@@ -38,7 +38,7 @@
 /* LEFT/ */
 
 /* RIGHT */
-.section_1_bg {
+.bg {
     z-index: -1;
     position: relative;
     display: flex;
@@ -46,12 +46,11 @@
     align-items: center;
     padding-top: 50px;
 }
-.section_1_bg_img {
+.bgImg {
     width: 100%;
 }
 .triangle {
     position: absolute;
-    /* top: 49.93%; */
     top: 50%;
     right: -13.61%;
     height: calc((300px / 720) * 100%);
