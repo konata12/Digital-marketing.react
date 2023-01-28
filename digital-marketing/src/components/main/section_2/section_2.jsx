@@ -20,7 +20,7 @@ class Section2 extends React.Component {
     render() {
 
         return (
-            <section className={styles.section2}>
+            <section className={styles.section}>
                 <Container class={styles.container} >
                     <BlueText
                         class={styles.blueText}

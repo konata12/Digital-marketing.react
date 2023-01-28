@@ -30,7 +30,7 @@ class Section1 extends React.Component {
     render() {
 
         return (
-            <section className={styles.section1}>
+            <section className={styles.section}>
                 <Container class={styles.container} >
                     <div className={styles.left}>
                         <Title

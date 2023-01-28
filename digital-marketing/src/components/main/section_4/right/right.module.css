@@ -1,0 +1,20 @@
+.right {
+    width: 50%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+.title {
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 1px;
+
+    margin-bottom: 48px;
+    padding-right: 10.6%;
+}
+.text {
+    font-size: 15px;
+    line-height: 26px;
+
+    margin-bottom: 58px;
+    padding-right: 10%;
+}

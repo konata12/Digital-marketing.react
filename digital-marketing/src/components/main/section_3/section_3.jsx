@@ -3,9 +3,9 @@ import styles from './section_3.module.css';
 
 // Components
 import Container from '../../common/container';
-import Left from '../../main/section_3/left/left';
-import Right from '../../main/section_3/right/right';
-import Form from '../../main/section_3/form/form';
+import Left from './left/left';
+import Right from './right/right';
+import Form from './form/form';
 import Title from '../../common/title';
 
 // Img
@@ -27,10 +27,9 @@ class Section3 extends React.Component {
     }
     
     render() {
-        console.dir(this.state.data)
-
+        
         return (
-            <section className={styles.section3}>
+            <section className={styles.section}>
                 <Title
                     class={styles.title}
                     reg={2}

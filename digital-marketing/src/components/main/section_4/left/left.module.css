@@ -1,0 +1,21 @@
+.left {
+    width: 50%;
+    padding-right: 5%;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+}
+.imgBox {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+.mainImg {
+    width: 100%;
+}
+.triangleImg {
+    position: absolute;
+    bottom: -6%;
+    left: -2%;
+    width: 23.6%;
+}

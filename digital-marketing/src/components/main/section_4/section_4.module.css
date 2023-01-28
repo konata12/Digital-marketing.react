@@ -1,0 +1,8 @@
+.section {
+    overflow: hidden;
+    /* padding-top: 22.25%; */
+    padding-top: 20%;
+}
+.container {
+    display: flex;
+}
