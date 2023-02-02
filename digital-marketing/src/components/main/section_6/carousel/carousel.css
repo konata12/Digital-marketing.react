@@ -1,0 +1,38 @@
+/* CAROUSEL */
+.owl-stage-outer {
+    margin-bottom: 4.67%;
+    overflow: visible;
+}
+.contsiner .owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+.owl-carousel .owl-item .worker,
+.owl-carousel .owl-item .star {
+    width: auto;
+}
+/* CAROUSEL/ */
+
+/* NAV */
+
+/* NAV/ */
+
+/* DOTS */
+.owl-dots {
+    display: flex;
+    justify-content: center;
+}
+.owl-dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgba(34, 34, 34, 0.4);
+
+    transition: all 0.3s ease-out;
+}
+.owl-dot:first-child {
+    margin-right: 6px;
+}
+.owl-dot.active {
+    background-color: #222222;
+}
+/* DOTS/ */

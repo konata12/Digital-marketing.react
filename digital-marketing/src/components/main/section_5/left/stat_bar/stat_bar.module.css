@@ -1,0 +1,23 @@
+.statBar {
+
+}
+.marginBot {
+    margin-bottom: 5.56%;
+}
+.textBox {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.86%;
+}
+.name {
+    font-family: 'osw';
+    font-size: 19px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.percent {
+    font-family: 'osw';
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,26 @@
+.mainBar {
+    height: 4px;
+    background: #EBEBEB;
+    border-radius: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.progressBar {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    z-index: 1;
+}
+
+/* COLORS */
+.blue {
+    background-color: #0057FF;
+}
+.purple {
+    background-color: #B861FF;
+}
+.orange {
+    background-color: #FF8E32;
+}

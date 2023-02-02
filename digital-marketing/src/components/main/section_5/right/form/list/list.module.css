@@ -1,0 +1,15 @@
+.list {
+    padding: 0;
+    list-style-type: none;
+
+    margin-bottom: 16.98%;
+}
+.listElem {
+    font-family: 'osw';
+    font-size: 12px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+.top {
+    margin-bottom: 3.92%;
+}

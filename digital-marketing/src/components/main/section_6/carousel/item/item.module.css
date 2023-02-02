@@ -1,0 +1,50 @@
+.item {
+    border: 1px solid #E7E7E7;
+    border-radius: 10px;
+    padding: 11.64% 11.9% 10.61%;
+
+    transition: all 0.3s ease-out;
+}
+.item:hover {
+    cursor: pointer;
+    background-color: rgba(220, 220, 220, 0.5);
+}
+.text {
+    font-family: 'rob';
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+
+    margin-bottom: 2.06%;
+}
+.imgBox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6.84%;
+}
+.img {
+    display: block;
+    width: auto;
+}
+.name {
+    font-family: 'osw';
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.role {
+    font-family: 'osw';
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+
+    margin-bottom: 3.42%;
+}
+.stars {
+    display: flex;
+    justify-content: center;
+}

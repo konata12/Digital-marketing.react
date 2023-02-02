@@ -8,10 +8,10 @@
     padding: 0;
 
 
-    /* animation-name: toNotVisible;
+    animation-name: toNotVisible;
     animation-timing-function: linear;
-    animation-duration: 5s; */
-    transition: all 3s linear;
+    animation-duration: 0.3s;
+    /* transition: all 3s linear; */
 }
 .notVisible {
     visibility: hidden;
@@ -19,10 +19,10 @@
     opacity: 0;
     height: 0;
 
-    /* animation-name: toVisible;
+    animation-name: toVisible;
     animation-timing-function: linear;
-    animation-duration: 5s; */
-    transition: all 3s linear;
+    animation-duration: 0.3s;
+    /* transition: all 3s linear; */
 }
 .visibleTop {
     margin-bottom: 6.85%;
@@ -50,20 +50,20 @@
 @keyframes toNotVisible {
     0% {
         height: auto;
-        /* transform: scaleY(1); */
+        transform: rotateX(0);
     }
     100% {
         height: 0;
-        /* transform: scaleY(0); */
+        transform: rotateX(90deg);
     }
 }
 @keyframes toVisible {
     0% {
         height: 0;
-        /* transform: scaleY(0); */
+        transform: rotateX(90deg);
     }
     100% {
         height: auto;
-        /* transform: scaleY(1); */
+        transform: rotateX(0);
     }
 }
