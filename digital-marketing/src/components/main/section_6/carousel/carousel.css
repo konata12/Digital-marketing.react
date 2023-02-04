@@ -17,6 +17,7 @@
     left: -2.5%;
     display: flex;
     justify-content: space-between;
+    outline: 1px solid #222222;
 }
 .owl-nav.mouseOver {
     cursor: pointer;
