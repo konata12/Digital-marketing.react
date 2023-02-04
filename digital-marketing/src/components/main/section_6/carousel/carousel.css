@@ -1,9 +1,6 @@
 /* CAROUSEL */
-.owl-stage-outer {
+.container .owl-carousel .owl-stage-outer {
     margin-bottom: 4.67%;
-    overflow: visible;
-}
-.contsiner .owl-carousel .owl-stage-outer {
     overflow: visible;
 }
 .owl-carousel .owl-item .worker,
@@ -13,7 +10,34 @@
 /* CAROUSEL/ */
 
 /* NAV */
+.owl-nav {
+    position: absolute;
+    width: 105%;
+    top: 36%;
+    left: -2.5%;
+    display: flex;
+    justify-content: space-between;
+}
+.owl-nav.mouseOver {
+    cursor: pointer;
+}
+.owl-prev,
+.owl-next {
+    display: flex;
+    align-items: center;
 
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    box-shadow: 0px 11px 24px rgba(0, 0, 0, 0.09);
+    border-radius: 6px;
+    padding: 16px 11px 16px 9px;
+    transition: all 0.3s ease-out;
+    /* padding: 1.25% 1% 1.25% 0.75%; */
+}
+.owl-prev:hover,
+.owl-next:hover {
+    background-color: rgba(220, 220, 220, 0.5);
+}
 /* NAV/ */
 
 /* DOTS */

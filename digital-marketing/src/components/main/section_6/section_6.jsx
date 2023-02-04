@@ -92,7 +92,6 @@ const carouselData = [
     }
 ]
 
-
 class Section6 extends React.Component {
     constructor(props) {
         super(props);
@@ -101,7 +100,6 @@ class Section6 extends React.Component {
     render() {
 
         return (
-
             <section className={styles.section}>
                 <Container class={styles.container}>
                     <Carousel itemsData={carouselData} />

@@ -5,7 +5,8 @@
 
     transition: all 0.3s ease-out;
 }
-.item:hover {
+.item:hover,
+.item.mouseOver {
     cursor: pointer;
     background-color: rgba(220, 220, 220, 0.5);
 }
