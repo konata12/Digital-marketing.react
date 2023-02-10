@@ -28,7 +28,8 @@ class Carousel extends React.Component {
         const nav_carousel = document.querySelector('.owl-nav');
         const nav_prev = document.querySelector('.owl-prev');
         const nav_next = document.querySelector('.owl-next');
-        const items = document.querySelectorAll('.item');
+        const items = Array.from(document.getElementsByClassName('item'))
+        // console.dir(items)
 
         // ARRAY FOR CURSOR
         const classes = [];
@@ -79,7 +80,11 @@ class Carousel extends React.Component {
         })
 
         // CURSOR
-        if (classes.includes('mouseOver')) {
+        const cursor_matches = items.map((item) => {
+            return item.matches('mouseOver')
+        })
+        console.dir(cursor_matches)
+        if (cursor_matches) {
             nav_carousel.classList.add('mouseOver');
             // ADD LINK
             nav_carousel.addEventListener('click', this.navClickHandler);
@@ -94,90 +99,41 @@ class Carousel extends React.Component {
         }
 
         // REPAIRING CLICK EVENT BUG
-        if (!classes.includes('mouseOver')) {
-            nav_carousel.addEventListener('mousedown', () => {
-                nav_carousel.addEventListener('mousemove', (e) => {
-                    let mouseOver = []
-                    const mouseX = e.clientX;
-                    const mouseY = e.clientY;
+        // if (!classes.includes('mouseOver')) {
+        //     nav_carousel.addEventListener('mousedown', () => {
+        //         nav_carousel.addEventListener('mousemove', (e) => {
+        //             let mouseOver = []
+        //             const mouseX = e.clientX;
+        //             const mouseY = e.clientY;
 
-                    items.forEach((item, i) => {
-                        const coordinates = item.getBoundingClientRect();
-                        const cursor_over_item = (coordinates.left < mouseX)
-                        && (coordinates.right > mouseX)
-                        && (coordinates.top < mouseY)
-                        && (coordinates.bottom > mouseY);
+        //             items.forEach((item, i) => {
+        //                 const coordinates = item.getBoundingClientRect();
+        //                 const cursor_over_item = (coordinates.left < mouseX)
+        //                 && (coordinates.right > mouseX)
+        //                 && (coordinates.top < mouseY)
+        //                 && (coordinates.bottom > mouseY);
             
-                        if (cursor_over_item && cursor_over_nav) {
-                            mouseOver[i] = 'mouseOver'
-                            item.classList.add('mouseOver');
-                            console.dir(true)
-                        } else {
-                            mouseOver[i] = ''
-                            item.classList.remove('mouseOver');
-                            console.dir(false)
-                        }
-                    })
-                    // console.dir(mouseOver)
+        //                 if (cursor_over_item && cursor_over_nav) {
+        //                     mouseOver[i] = 'mouseOver'
+        //                     item.classList.add('mouseOver');
+        //                     console.dir(true)
+        //                 } else {
+        //                     mouseOver[i] = ''
+        //                     item.classList.remove('mouseOver');
+        //                     console.dir(false)
+        //                 }
+        //             })
+        //             // console.dir(mouseOver)
 
-                    if(mouseOver.includes('mouseOver')) {
-                        // console.dir(true)
-                        nav_carousel.addEventListener('mouseup', (e) => {
-                            nav_carousel.removeEventListener('click', this.navClickHandler);
-                        })
-                    }
-                })
-                // let mouseOver = []
-
-                // items.forEach((item, i) => {
-                //     console.dir(i)
-                //     const coordinates = item.getBoundingClientRect();
-                //     const cursor_over_item = (coordinates.left < mouseX)
-                //     && (coordinates.right > mouseX)
-                //     && (coordinates.top < mouseY)
-                //     && (coordinates.bottom > mouseY);
-        
-                //     if (cursor_over_item && cursor_over_nav) {
-                //         mouseOver[i] = 'mouseOver'
-                //         item.classList.add('mouseOver');
-                //     } else {
-                //         mouseOver[i] = ''
-                //         item.classList.remove('mouseOver');
-                //     }
-                // })
-
-                // if(mouseOver.includes('mouseOver')) {
-                //     console.dir(true)
-                //     nav_carousel.addEventListener('mouseup', (e) => {
-                //         nav_carousel.removeEventListener('click', this.navClickHandler);
-                //     })
-                // }
-
-                // nav_carousel.addEventListener('mouseup', (e) => {
-                //     console.dir(true)
-                //     let mouseOver = []
-                //     items.forEach((item, i) => {
-                //         console.dir(i)
-                //         const coordinates = item.getBoundingClientRect();
-                //         const cursor_over_item = (coordinates.left < mouseX)
-                //         && (coordinates.right > mouseX)
-                //         && (coordinates.top < mouseY)
-                //         && (coordinates.bottom > mouseY);
-            
-                //         if (cursor_over_item && cursor_over_nav) {
-                //             mouseOver[i] = 'mouseOver'
-                //             item.classList.add('mouseOver');
-                //         } else {
-                //             mouseOver[i] = ''
-                //             item.classList.remove('mouseOver');
-                //         }
-                //     })
-                //     if(mouseOver.includes('mouseOver')) {
-                //         nav_carousel.removeEventListener('click', this.navClickHandler);
-                //     }
-                // })
-            })
-        }
+        //             if(mouseOver.includes('mouseOver')) {
+        //                 // console.dir(true)
+        //                 nav_carousel.addEventListener('mouseup', (e) => {
+        //                     nav_carousel.removeEventListener('click', this.navClickHandler);
+        //                 })
+        //             }
+        //         })
+        //     })
+        // }
     }
 
     render() {
