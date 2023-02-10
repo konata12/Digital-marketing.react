@@ -23,12 +23,6 @@ class Carousel extends React.Component {
         );
     }
 
-    // navClickRepair(e) {
-    //     if (!classes.includes('mouseOver')) {
-    //         nav_carousel.removeEventListener('click', this.navClickHandler);
-    //     }
-    // }
-
     mouseMoveHandler = (e) => {
         // ELEMENTS
         const nav_carousel = document.querySelector('.owl-nav');
@@ -75,6 +69,12 @@ class Carousel extends React.Component {
             } else {
                 classes[i] = ''
                 item.classList.remove('mouseOver');
+            }
+
+            // NAV BUTTONS COLOR
+            if (cursor_over_nav_prev || cursor_over_nav_next) {
+                item.classList.remove('mouseOver');
+                nav_carousel.removeEventListener('click', this.navClickHandler);
             }
         })
 
